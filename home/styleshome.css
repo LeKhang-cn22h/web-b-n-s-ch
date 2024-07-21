@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bg {
+    width: 300px;
+    height: 100px;
+    background: url(/img/slogan.png);
+    background-size: cover;
+    border: none;
+}
+.bg:hover {
+    cursor: pointer;
+}
+
+.search-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-container input[type="text"] {
+    width: 50%;
+    height: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px 0 0 0;
+    outline: none;
+}
+
+.search-container button {
+    padding: 10px 15px;
+    height: 40px;
+    border-left: 0;
+    background-color: #007bff;
+    color: white;
+    border-radius: 0 0 20px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #0056b3;
+}
+
+.login-button {
+    flex-grow: 0.1;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.cart-button {
+    flex-grow: 0.1;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.cart-button i {
+    font-size: 40px; /* Tăng kích thước icon */
+    color: black;
+}
+
+.menu {
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    background-color: #c3a38c;
+    margin: 0;
+}
+
+.menu__item {
+    flex-grow: 1;
+    list-style: none;
+}
+
+.menu__item a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.menu__item a:hover {
+    background-color: rgb(169, 130, 116);
+}
+
+.book-categories {
+    width: 20%;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #4ba0ba;
+}
+
+.book-categories ul li {
+    position: relative; /* Đảm bảo các mục con được định vị chính xác so với mục cha */
+}
+
+.book-categories ul ul {
+    border-radius: 3px;
+    position: absolute; /* Định vị tuyệt đối để dễ dàng điều chỉnh vị trí */
+    display: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(124, 180, 235);
+    left: 100%; /* Đẩy menu con sang bên phải */
+    top: 0; /* Đặt vị trí menu con ở cùng một hàng ngang với mục cha */
+}
+
+.book-categories ul ul a {
+    display: block;
+    white-space: nowrap; /* Ngăn ngừa ngắt dòng */
+    padding: 10px; /* Thêm padding để nội dung không bị chặt */
+}
+
+.book-categories ul li:hover > ul {
+    display: block;
+}
+
+.category__item {
+    list-style: none;
+}
+
+.book-categories ul li a {
+    display: block;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px;
+    line-height: 30px;
+    white-space: nowrap; /* Ngăn ngừa ngắt dòng */
+    overflow: hidden; /* Ẩn nội dung vượt quá chiều rộng */
+    text-overflow: ellipsis; /* Hiển thị dấu chấm (...) nếu nội dung quá dài */
+}
+
+/* Đảm bảo rằng danh mục chính giữ màu nền khi hover vào các mục con */
+.book-categories ul li:hover > a,
+.book-categories ul li:hover > ul a:hover {
+    background-color: rgb(59, 59, 243);
+}
