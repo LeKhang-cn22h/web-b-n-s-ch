@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="action.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chủ</title>
@@ -15,7 +16,7 @@
             <input type="text" placeholder="Tìm kiếm...">
             <button type="submit"><i class="fas fa-search"></i></button>
         </div>
-        <button type="button" class="login-button">Đăng nhập</button>
+        <button type="button" class="login-button"><a href="/login/login.html">Đăng Nhập</a></button>
         <button type="button" class="cart-button"><i class="fas fa-shopping-cart"></i></button>
     </header>
     <nav>
@@ -27,7 +28,8 @@
             <li class="menu__item"><a href="#">Liên hệ</a></li>
         </ul>
     </nav>
-    <section class="book-categories">
+    <div class="container">
+    <aside class="book-categories">
         <h2><i class="fas fa-bars"></i> Danh Mục Sách</h2>
         <ul class="categories">
             <li class="category__item"><a href="#">Sách nổi bật</a>
@@ -190,19 +192,37 @@
             <li class="category__item"><a href="#">Tất cả danh mục</a>
 
         </ul>
-    </section>
-
-    <div class="form-container" style="display: none;">
-        <form action="login.php" method="POST">
-            <button type="button" class="close-button">&times;</button>
-            <h2>Đăng nhập</h2>
-            <label for="username">Tên đăng nhập</label>
-            <input type="text" id="username" name="username" required>
-            <label for="password">Mật khẩu</label>
-            <input type="password" id="password" name="password" required>
-            <button type="submit">Đăng nhập</button>
-            <p><a href="#">Quên mật khẩu?</a></p>
-        </form>
+    </aside>
+    <article>
+        <div class="slideShow">
+            <div class="slideShow__list">
+                <a href="#link1">
+                    <img class="slideShow__list-item" src="/img/kientao.jpg" alt="tủ sách kinh tế">
+                  </a>
+                  <a href="#link2">
+                    <img class="slideShow__list-item" src="/img/kinh te.png" alt="sách kiến tạo thành công">
+                  </a>
+                  <a href="#link3">
+                    <img class="slideShow__list-item" src="/img/sachmoi.jpg" alt="sách mới nổi bật">
+                  </a>
+                  
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+          
+        <div class="sildeShow__list-item2">
+            <a href=""><img src="/img/sp.png" alt="anh phu"></a>
+            <a href=""><img src="/img/sp2.jpg" alt="anh phu 2"></a>
+          
+        </div>
+    </article>
+    
     </div>
+    
+<footer>
+day laf chan
+</footer>
+   
 </body>
 </html>
