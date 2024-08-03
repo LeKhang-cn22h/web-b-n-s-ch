@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sách nổi bật</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="/home/styleshome.css">
+    <link rel="stylesheet" href="sp.css">
+    <link rel="stylesheet" href="/footer/footer.css">
+    
+    <link rel="icon" href="/img/logo-removebg-preview.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <button class="bg"></button>
+        <div class="search-container">
+            <input type="text" placeholder="Tìm kiếm...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+        <button type="button" class="login-button"><a href="/login/login.html">Đăng Nhập</a></button>
+        <button type="button" class="toggle-cart-btn cart-button" id="toggle-cart-btn"><i class="fas fa-cart-shopping"></i></button>
+    </header>
+    
+    <nav>
+        <ul class="menu">
+            <li class="menu__item"><a href="/home/index.html">Trang chủ</a></li>
+            <li class="menu__item"><a href="/gioithieu/moi.html">Giới thiệu</a></li>
+            <li class="menu__item"><a href="#">Sách nổi bật</a></li>
+            <li class="menu__item"><a href="/reviewsach/review.html">Review sách</a></li>
+            <li class="menu__item"><a href="/tintuc/tintuc.html">Tin tức</a></li>
+        </ul>
+    </nav>
+    <div class="tong">
+    <div class="container">
+        <aside class="book-categories">
+            <h2><i class="fas fa-bars"></i> Danh Mục Sách</h2>
+            <ul class="categories">
+    
+                <li class="category__item"><a href="#">Sách Thiếu Nhi</a>
+                    <ul>
+                        <li class="category__item"><a href="#">Văn học thiếu nhi</a></li>
+                        <li class="category__item"><a href="#">Kiến thức - Kỹ năng cho trẻ em</a></li>
+                        <li class="category__item"><a href="#">Tranh Truyện</a></li>
+                        <li class="category__item"><a href="#">Vui vào lớp 1</a></li>
+                        <li class="category__item"><a href="#">Truyện Tranh</a></li>
+                        <li class="category__item"><a href="#">Khám phá thế giới</a></li>
+                        <li class="category__item"><a href="#">Sách nói</a></li>
+                    </ul>
+                </li>           
+                <li class="category__item"><a href="#">Sách Kỹ Năng Sống</a>
+                    <ul>
+                        <li class="category__item">
+                            <a href="#">Lãnh đạo</a>
+                            <ul>
+                                <li class="category__item"><a href="#">Lãnh đạo doanh nghiệp</a></li>
+                                <li class="category__item"><a href="#">Lãnh đạo đội nhóm</a></li>
+                            </ul>
+                        </li>
+                        <li class="category__item">
+                            <a href="#">Giao tiếp</a>
+                            <ul>
+                                <li class="category__item"><a href="#">Kỹ năng thuyết trình</a></li>
+                                <li class="category__item"><a href="#">Kỹ năng đàm phán</a></li>
+                            </ul>
+                        </li>
+                        <li class="category__item">
+                            <a href="#">Quản lý thời gian</a>
+                            <ul>
+                                <li class="category__item"><a href="#">Kỹ năng lập kế hoạch</a></li>
+                                <li class="category__item"><a href="#">Kỹ năng ưu tiên</a></li>
+                            </ul>
+                        </li>
+                        <li class="category__item">
+                            <a href="#">Tâm lý</a>
+                            <ul>
+                                <li class="category__item"><a href="#">Rèn luyện nhân cách</a></li>
+                                <li class="category__item"><a href="#">Tuổi mới lớn</a></li>
+                                <li class="category__item"><a href="#">Thao túng</a></li>
+                            </ul>
+                        </li>
+                        <li class="category__item">
+                            <a href="#">Tài chính cá nhân</a>
+                            <ul>
+                                <li class="category__item"><a href="#">Quản lý chi tiêu</a></li>
+                                <li class="category__item"><a href="#">Đầu tư cá nhân</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="category__item"><a href="#">Sách Khoa Học - Công Nghệ</a>
+                    <ul>
+                        <li class="category__item">
+                            <a href="#">Công nghệ thông tin</a>
+                            <ul>
+                                <li class="category__item"><a href="#">Lập trình</a></li>
+                                <li class="category__item"><a href="#">Mạng máy tính</a></li>
+                                <li class="category__item"><a href="#">Khoa học dữ liệu</a></li>
+                            </ul>
+                        </li>
+                        <li class="category__item">
+                            <a href="#">Khoa học tự nhiên</a>
+                            <ul>
+                                <li class="category__item"><a href="#">Vật lý</a></li>
+                                <li class="category__item"><a href="#">Hóa học</a></li>
+                                <li class="category__item"><a href="#">Sinh học</a></li>
+                                <li class="category__item"><a href="#">Lịch sử</a></li>
+                                <li class="category__item"><a href="#">Vũ trụ</a></li>
+                            </ul>
+                        </li>
+                        <li class="category__item">
+                            <a href="#">Kỹ thuật</a>
+                            <ul>
+                                <li class="category__item"><a href="#">Cơ khí</a></li>
+                                <li class="category__item"><a href="#">Điện tử</a></li>
+                                <li class="category__item"><a href="#">Tự động hóa</a></li>
+                            </ul>
+                        </li>
+                        <li class="category__item">
+                            <a href="#">Toán học</a>
+                            <ul>
+                                <li class="category__item"><a href="#">Đại số</a></li>
+                                <li class="category__item"><a href="#">Hình học</a></li>
+                                <li class="category__item"><a href="#">Toán ứng dụng</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="category__item">
+                    <a href="#">Sách Gia Đình</a>
+                    <ul>
+                        <li class="category__item">
+                            <a href="#">Nuôi dạy con</a>
+                            <ul>
+                                <li class="category__item"><a href="#">Dinh dưỡng cho trẻ</a></li>
+                                <li class="category__item"><a href="#">Giáo dục sớm</a></li>
+                            </ul>
+                        </li>
+                        <li class="category__item"><a href="#">Nấu ăn</a></li>
+                        <li class="category__item">
+                            <a href="#">Sức khỏe gia đình</a>
+                            <ul>
+                                <li class="category__item"><a href="#">Chăm sóc sức khỏe</a></li>
+                                <li class="category__item"><a href="#">Dinh dưỡng</a></li>
+                            </ul>
+                        </li>
+                        <li class="category__item">
+                            <a href="#">Quản lý gia đình</a>
+                            <ul>
+                                <li class="category__item"><a href="#">Quản lý tài chính</a></li>
+                                <li class="category__item"><a href="#">Quản lý thời gian</a></li>
+                            </ul>
+                        </li>
+                        <li class="category__item">
+                            <a href="#">Tâm lý gia đình</a>
+                            <ul>
+                                <li class="category__item"><a href="#">Tâm lý vợ chồng</a></li>
+                                <li class="category__item"><a href="#">Tâm lý trẻ em</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="category__item">
+                    <a href="#">Sách Giáo Khoa</a>
+                    <ul>
+                        <li class="category__item">
+                            <a href="#">Tiểu học</a>
+                            <ul>
+                                <li class="category__item"><a href="#">Lớp 1</a></li>
+                                <li class="category__item"><a href="#">Lớp 2</a></li>
+                                <li class="category__item"><a href="#">Lớp 3</a></li>
+                                <li class="category__item"><a href="#">Lớp 4</a></li>
+                                <li class="category__item"><a href="#">Lớp 5</a></li>
+                            </ul>
+                        </li>
+                        <li class="category__item">
+                            <a href="#">Trung học cơ sở</a>
+                            <ul>
+                                <li class="category__item"><a href="#">Lớp 6</a></li>
+                                <li class="category__item"><a href="#">Lớp 7</a></li>
+                                <li class="category__item"><a href="#">Lớp 8</a></li>
+                                <li class="category__item"><a href="#">Lớp 9</a></li>
+                            </ul>
+                        </li>
+                        <li class="category__item">
+                            <a href="#">Trung học phổ thông</a>
+                            <ul>
+                                <li class="category__item"><a href="#">Lớp 10</a></li>
+                                <li class="category__item"><a href="#">Lớp 11</a></li>
+                                <li class="category__item"><a href="#">Lớp 12</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="category__item"><a href="#">Tất cả danh mục</a>
+    
+            </ul>
+        </aside>
+    <ul class="products" id="product-list">
+        <li class="wrapper-slide">
+           <div class="product__item">
+               <div class="product__item-top">
+                   <a href="#" class="product__item-top--thumb">
+                       <img src="/imgbookgd/anh1.jpg" alt="Book 1">
+                   </a>
+                   <button class="buy">Mua ngay</button>
+               </div>
+               <div class="product__info">
+                   <h3 class="product__info-name">Bộ Sách "Who Is - Là Ai" - Mang Các Con Khám Phá Bảo Tàng Chân Dung Những Vĩ Nhân Đã Làm Thay Đổi Thế Giới (Combo 19 Cuốn)
+                   </h3>
+                   <div class="product__info-price">
+                       <p><del class="product__info-price--root">931,000 <sup>đ</sup></del> <span>744,800</span><sup>đ</sup> </p>
+                       <div class="tag-icon"> - 20% </div>
+                   </div>
+               </div>
+           </div>
+        </li>
+        <li class="wrapper-slide">
+           <div class="product__item">
+               <div class="product__item-top">
+                   <a href="#" class="product__item-top--thumb">
+                       <img src="/imgbookgd/anh2.jpeg" alt="Book 2">
+                   </a>
+                   <button class="buy">Mua ngay</button>
+               </div>
+               <div class="product__info">
+                   <h3 class="product__info-name">Combo Vô Cùng Tàn Nhẫn Vô Cùng Yêu Thương - BẢN ĐẶC BIỆT (Bộ 4 Tập)</h3>
+                   <div class="product__info-price">
+                       <p><del class="product__info-price--root">699,000 <sup>đ</sup></del> <span>559,200</span><sup>đ</sup> </p>
+                       <div class="tag-icon"> - 20% </div>
+                   </div>
+               </div>
+           </div>
+        </li>
+        <li class="wrapper-slide">
+           <div class="product__item">
+               <div class="product__item-top">
+                   <a href="#" class="product__item-top--thumb">
+                       <img src="/imgbookgd/anh3.jpg" alt="Book 3">
+                   </a>
+                   <button class="buy">Mua ngay</button>
+               </div>
+               <div class="product__info">
+                   <h3 class="product__info-name">Tri Thức Về Vạn Vật - Một Thế Giới Trực Quan Chưa Từng Thấy</h3>
+                   <div class="product__info-price">
+                       <p><del class="product__info-price--root"> 699,000 <sup>đ</sup></del> <span>559,200</span><sup>đ</sup> </p>
+                       <div class="tag-icon"> - 20% </div>
+                   </div>
+               </div>
+           </div>
+        </li>
+        <li class="wrapper-slide">
+           <div class="product__item">
+               <div class="product__item-top">
+                   <a href="#" class="product__item-top--thumb">
+                       <img src="/imgbookgd/anh4.png" alt="Book 4">
+                   </a>
+                   <button class="buy">Mua ngay</button>
+               </div>
+               <div class="product__info">
+                   <h3 class="product__info-name">Tiểu Học Vui - Vững Bước Lớp 5 - 101 Câu Đố Rèn Trí Não Luyện Kỹ Năng
+                   </h3>
+                   <div class="product__info-price">
+                       <p><del class="product__info-price--root">79,000 <sup>đ</sup></del><span> 63,200</span><sup>đ</sup> </p>
+                       <div class="tag-icon"> - 20% </div>
+                   </div>
+               </div>
+           </div>
+        </li>
+        <li class="wrapper-slide">
+           <div class="product__item">
+               <div class="product__item-top">
+                   <a href="#" class="product__item-top--thumb">
+                       <img src="/imgbookgd/anh5.png" alt="Book 5">
+                   </a>
+                   <button class="buy">Mua ngay</button>
+               </div>
+               <div class="product__info">
+                   <h3 class="product__info-name">Tiểu Học Vui - Tăng Tốc Lớp 4 - 101 Câu Đố Rèn Trí Não Luyện Kỹ Năng</h3>
+                   <div class="product__info-price">
+                       <p><del class="product__info-price--root"> 79,500 <sup>đ</sup></del><span>63,600</span><sup>đ</sup> </p>
+                       <div class="tag-icon"> - 20% </div>
+                   </div>
+               </div>
+           </div>
+        </li>
+        <li class="wrapper-slide">
+           <div class="product__item">
+               <div class="product__item-top">
+                   <a href="#" class="product__item-top--thumb">
+                       <img src="/imgbookgd/anh6.png" alt="Book 6">
+                   </a>
+                   <button class="buy">Mua ngay</button>
+               </div>
+               <div class="product__info">
+                   <h3 class="product__info-name">Hiểu Về Cảm Xúc Và Hành Vi Của Trẻ - Con Không Thích Nhường!</h3>
+                   <div class="product__info-price">
+                       <p><del class="product__info-price--root">59,000<sup>đ</sup></del> <span>47,200</span><sup>đ</sup> </p>
+                       <div class="tag-icon"> - 20% </div>
+                   </div>
+               </div>
+           </div>
+        </li>
+        
+        <li class="wrapper-slide">
+           <div class="product__item">
+               <div class="product__item-top">
+                   <a href="#" class="product__item-top--thumb">
+                       <img src="/imgbookgd/anh7.png" alt="Book 7">
+                   </a>
+                   <button class="buy">Mua ngay</button>
+               </div>
+               <div class="product__info">
+                   <h3 class="product__info-name">Tư Duy Logic - Trò Chơi Tư Duy Cho Trẻ (Dành Cho Bé Từ 5 Tuổi)</h3>
+                   <div class="product__info-price">
+                       <p><del class="product__info-price--root">49,000<sup>đ</sup></del> <span>39,200</span><sup>đ</sup> </p>
+                       <div class="tag-icon"> - 20% </div>
+                   </div>
+               </div>
+           </div>
+        </li>
+        <li class="wrapper-slide">
+           <div class="product__item">
+               <div class="product__item-top">
+                   <a href="#" class="product__item-top--thumb">
+                       <img src="/imgbookgd/anh8.jpeg" alt="Book 8">
+                   </a>
+                   <button class="buy">Mua ngay</button>
+               </div>
+               <div class="product__info">
+                   <h3 class="product__info-name">Rèn Luyện Sự Tập Trung - Trò Chơi Tư Duy Cho Trẻ (Dành Cho Bé Từ 5 Tuổi)</h3>
+                   <div class="product__info-price">
+                       <p><del class="product__info-price--root">49,000 <sup>đ</sup></del> <span>39,200</span> <sup>đ</sup> </p>
+                       <div class="tag-icon"> - 20% </div>
+                   </div>
+               </div>
+           </div>
+        </li>
+        <li class="wrapper-slide">
+            <div class="product__item">
+                <div class="product__item-top">
+                    <a href="#" class="product__item-top--thumb">
+                        <img src="/imgbookgd/anh9.jpeg" alt="Book 9">
+                    </a>
+                    <button class="buy">Mua ngay</button>
+                </div>
+                <div class="product__info">
+                    <h3 class="product__info-name">Chico Bon Bon – Chú Khỉ Có Chiếc Đai Vạn Năng - Nhiệm Vụ Không Gian
+                    </h3>
+                    <div class="product__info-price">
+                        <p><del class="product__info-price--root">59,000<sup>đ</sup></del> <span>47,200</span><sup>đ</sup> </p>
+                        <div class="tag-icon"> - 20% </div>
+                    </div>
+                </div>
+            </div>
+         </li>
+         <li class="wrapper-slide">
+            <div class="product__item">
+                <div class="product__item-top">
+                    <a href="#" class="product__item-top--thumb">
+                        <img src="/imgbookgd/anh10.jpeg" alt="Book 10">
+                    </a>
+                    <button class="buy">Mua ngay</button>
+                </div>
+                <div class="product__info">
+                    <h3 class="product__info-name">Chico Bon Bon – Chú Khỉ Có Chiếc Đai Vạn Năng - Chuyện Tai Quái Ngoài Bờ Bển</h3>
+                    <div class="product__info-price">
+                        <p><del class="product__info-price--root">59,000<sup>đ</sup></del> <span>47,200</span><sup>đ</sup> </p>
+                        <div class="tag-icon"> - 20% </div>
+                    </div>
+                </div>
+            </div>
+         </li>
+         <li class="wrapper-slide">
+            <div class="product__item">
+                <div class="product__item-top">
+                    <a href="#" class="product__item-top--thumb">
+                        <img src="/imgbookgd/anh11.jpeg" alt="Book 11">
+                    </a>
+                    <button class="buy">Mua ngay</button>
+                </div>
+                <div class="product__info">
+                    <h3 class="product__info-name">Đắc Nhân Tâm - Dale Carnegie (dịch giả Minh Ngọc)</h3>
+                    <div class="product__info-price">
+                        <p><del class="product__info-price--root">86,000<sup>đ</sup></del> <span> 68,800</span><sup>đ</sup> </p>
+                        <div class="tag-icon"> - 20% </div>
+                    </div>
+                </div>
+            </div>
+         </li>
+         <li class="wrapper-slide">
+            <div class="product__item">
+                <div class="product__item-top">
+                    <a href="#" class="product__item-top--thumb">
+                        <img src="/imgbookgd/anh12.jpeg" alt="Book 12">
+                    </a>
+                    <button class="buy">Mua ngay</button>
+                </div>
+                <div class="product__info">
+                    <h3 class="product__info-name">Peak: Giải Mã Bí Mật Của Những Thiên Tài (Tái bản)</h3>
+                    <div class="product__info-price">
+                        <p><del class="product__info-price--root">159,000<sup>đ</sup></del> <span>127,200</span><sup>đ</sup> </p>
+                        <div class="tag-icon"> - 20% </div>
+                    </div>
+                </div>
+            </div>
+         </li>
+         <li class="wrapper-slide">
+            <div class="product__item">
+                <div class="product__item-top">
+                    <a href="#" class="product__item-top--thumb">
+                        <img src="/imgbookgd/anh13.jpeg" alt="Book 13">
+                    </a>
+                    <button class="buy">Mua ngay</button>
+                </div>
+                <div class="product__info">
+                    <h3 class="product__info-name">Trước Khi Chúng Ta Nói Lời Chia Tay - Nhã Nam</h3>
+                    <div class="product__info-price">
+                        <p><del class="product__info-price--root">110,000<sup>đ</sup></del> <span>88,000</span><sup>đ</sup> </p>
+                        <div class="tag-icon"> - 20% </div>
+                    </div>
+                </div>
+            </div>
+         </li>
+         <li class="wrapper-slide">
+            <div class="product__item">
+                <div class="product__item-top">
+                    <a href="#" class="product__item-top--thumb">
+                        <img src="/imgbookgd/anh14.jpeg" alt="Book 14">
+                    </a>
+                    <button class="buy">Mua ngay</button>
+                </div>
+                <div class="product__info">
+                    <h3 class="product__info-name">Ngày mai, ngày mai và ngày mai nữa - Nhã nam</h3>
+                    <div class="product__info-price">
+                        <p><del class="product__info-price--root">259,000<sup>đ</sup></del> <span>207,200</span><sup>đ</sup> </p>
+                        <div class="tag-icon"> - 20% </div>
+                    </div>
+                </div>
+            </div>
+         </li>
+         <li class="wrapper-slide">
+            <div class="product__item">
+                <div class="product__item-top">
+                    <a href="#" class="product__item-top--thumb">
+                        <img src="/imgbookgd/anh15.jpg" alt="Book 15">
+                    </a>
+                    <button class="buy">Mua ngay</button>
+                </div>
+                <div class="product__info">
+                    <h3 class="product__info-name">Ngày mai, ngày mai và ngày mai nữa - Nhã nam</h3>
+                    <div class="product__info-price">
+                        <p><del class="product__info-price--root">59,000<sup>đ</sup></del> <span>47.200</span><sup>đ</sup> </p>
+                        <div class="tag-icon"> - 20% </div>
+                    </div>
+                </div>
+            </div>
+         </li>
+         <li class="wrapper-slide">
+            <div class="product__item">
+                <div class="product__item-top">
+                    <a href="#" class="product__item-top--thumb">
+                        <img src="/imgbookgd/anh16.png" alt="Book 16">
+                    </a>
+                    <button class="buy">Mua ngay</button>
+                </div>
+                <div class="product__info">
+                    <h3 class="product__info-name">Đàn bà vui buồn bé mọn
+                    </h3>
+                    <div class="product__info-price">
+                        <p><del class="product__info-price--root">90,000<sup>đ</sup></del> <span>72,000</span><sup>đ</sup> </p>
+                        <div class="tag-icon"> - 20% </div>
+                    </div>
+                </div>
+            </div>
+         </li>
+         <li class="wrapper-slide">
+            <div class="product__item">
+                <div class="product__item-top">
+                    <a href="#" class="product__item-top--thumb">
+                        <img src="/imgbookgd/anh17.jpeg" alt="Book 17">
+                    </a>
+                    <button class="buy">Mua ngay</button>
+                </div>
+                <div class="product__info">
+                    <h3 class="product__info-name">38 Lá Thư Rockefeller Gửi Cho Con Trai- MC books
+                    </h3>
+                    <div class="product__info-price">
+                        <p><del class="product__info-price--root">158,000<sup>đ</sup></del> <span>126,400</span><sup>đ</sup> </p>
+                        <div class="tag-icon"> - 20% </div>
+                    </div>
+                </div>
+            </div>
+         </li>
+         <li class="wrapper-slide">
+            <div class="product__item">
+                <div class="product__item-top">
+                    <a href="#" class="product__item-top--thumb">
+                        <img src="/imgbookgd/anh18.jpeg" alt="Book 18">
+                    </a>
+                    <button class="buy">Mua ngay</button>
+                </div>
+                <div class="product__info">
+                    <h3 class="product__info-name">Tâm - Sức Mạnh Khiến Cuộc Đời Như Mình Mong Muốn - Thái Hà
+                    </h3>
+                    <div class="product__info-price">
+                        <p><del class="product__info-price--root">89,000<sup>đ</sup></del> <span>71,200</span><sup>đ</sup> </p>
+                        <div class="tag-icon"> - 20% </div>
+                    </div>
+                </div>
+            </div>
+         </li>
+         <li class="wrapper-slide">
+            <div class="product__item">
+                <div class="product__item-top">
+                    <a href="#" class="product__item-top--thumb">
+                        <img src="/imgbookgd/anh19.jpeg" alt="Book 19">
+                    </a>
+                    <button class="buy">Mua ngay</button>
+                </div>
+                <div class="product__info">
+                    <h3 class="product__info-name">45 Giây Tạo Nên Thay Đổi - Thấu Hiểu Tiếp Thị Mạng Lưới - NXB trẻ
+                    </h3>
+                    <div class="product__info-price">
+                        <p><del class="product__info-price--root">80,000<sup>đ</sup></del> <span>64,000</span><sup>đ</sup> </p>
+                        <div class="tag-icon"> - 20% </div>
+                    </div>
+                </div>
+            </div>
+         </li>
+         <li class="wrapper-slide">
+            <div class="product__item">
+                <div class="product__item-top">
+                    <a href="#" class="product__item-top--thumb">
+                        <img src="/imgbookgd/anh20.jpeg" alt="Book 20">
+                    </a>
+                    <button class="buy">Mua ngay</button>
+                </div>
+                <div class="product__info">
+                    <h3 class="product__info-name">Mài Giũa Kỹ Năng - Vượt Trội Điểm Số -AZ Books
+                    </h3>
+                    <div class="product__info-price">
+                        <p><del class="product__info-price--root">119,000<sup>đ</sup></del> <span>95.200</span><sup>đ</sup> </p>
+                        <div class="tag-icon"> - 20% </div>
+                    </div>
+                </div>
+            </div>
+         </li>
+         
+       </ul>
+        <!-- Menu giỏ hàng -->
+    <div id="cart-menu" class="cart-menu">
+        <section class="gio">
+            <h2>Giỏ hàng</h2>
+            <form action="">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sản phẩm</th>
+                            <th>Giá</th>
+                            <th>SL</th>
+                            <th>Chọn</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Các sản phẩm sẽ được thêm vào đây -->
+                    </tbody>
+                </table>
+                <div class="tongtien">
+                    <p>Tổng tiền: <span>0<sup>đ</sup></span></p>
+                </div>
+            </form>
+        </section>
+    </div>
+</div>
+
+    
+<footer class="footer">
+    <div class="containerfooter">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Online shop</h4>
+                <ul>
+                    <li><a href="#">Sách thiếu nhi</a></li>
+                    <li><a href="#">Sách kỹ năng sống</a></li>
+                    <li><a href="#">Sách khoa học</a></li>
+                    <li><a href="#">Sách gia đình</a></li>
+                    <li><a href="#">Sách giáo khoa</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+       <script src="sp.js"></script>
+</body>
+</html>

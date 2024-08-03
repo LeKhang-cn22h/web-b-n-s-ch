@@ -1,0 +1,162 @@
+/* Đặt chiều cao và margin của body và html */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Thiết lập hình nền */
+.background {
+    background-image: url('/img/bgn.jpg');
+    background-size: cover; /* Đảm bảo hình nền bao phủ toàn bộ màn hình */
+    background-position: center; /* Căn giữa hình nền */
+    position: fixed; /* Đảm bảo hình nền luôn ở vị trí cố định */
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Đảm bảo hình nền nằm dưới form login */
+}
+
+/* Container để căn giữa form */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative; /* Đảm bảo container nằm trên hình nền */
+}
+
+h1 {
+    width: 110%;
+    border-bottom: 3px solid #4e80d6; 
+    text-align: center;
+    color: #2320a3;
+}   
+
+/* Căn giữa nội dung bên trong form */
+form.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Đảm bảo form chiếm toàn bộ chiều rộng */
+    max-width: 400px; /* Chiều rộng tối đa của form */
+    min-width: 250px; /* Chiều rộng tối thiểu của form */
+    padding: 20px;
+    border: 3px solid #4e80d6;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: rgba(201, 201, 201, 0.7); /* Nền trong suốt */
+}
+
+/* Căn chỉnh các input và button */
+form.login input[type="text"],
+form.login input[type="password"],
+form.login input[type="submit"],
+form.login input[type="button"] {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+form.login input[type="text"]:focus,
+form.login input[type="password"]:focus {
+    border: 2px solid blue; /* Màu viền khi ô input được chọn */
+    outline: none; /* Loại bỏ đường viền mặc định của trình duyệt */
+}
+
+/* Căn chỉnh các button */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px; /* khoảng cách giữa các nút */
+}
+
+.buttons input[type="submit"],
+.buttons input[type="button"] {
+    border-radius: 30px;
+    width: 32%; /* Điều chỉnh để 3 nút vừa với chiều rộng form */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Thêm hiệu ứng chuyển động và màu nền */
+    font-weight: bold;
+}
+
+/* Thiết lập màu sắc cho các nút */
+.buttons input[type="submit"]:not(.cancel),
+.buttons input[type="button"]:not(.cancel) {
+    background-color: #66FF99; 
+    color: #333333;
+    border: 3px solid #66FF99;
+    cursor: pointer;
+}
+
+.buttons input[type="submit"].cancel,
+.buttons input[type="button"].cancel {
+    color: #000;
+    border: none;
+    cursor: pointer;
+    box-shadow: inset 0 0 20px rgb(63, 63, 65);
+}
+
+/* Thêm hiệu ứng hover */
+.buttons input[type="submit"]:not(.cancel):hover,
+.buttons input[type="button"]:not(.cancel):hover {
+    border: 3px solid rgb(0, 0, 0); /* Màu khi hover cho nút Đăng nhập và Đăng ký */
+    transform: scale(1.2); /* Phóng to nút khi di chuột */
+}
+
+.buttons input[type="submit"].cancel:hover,
+.buttons input[type="button"].cancel:hover {
+    border: 3px solid black;
+    transform: scale(1.2); /* Phóng to nút khi di chuột */
+}
+
+.forgot-password {
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    color: #160774;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Nút Đăng nhập bằng Facebook */
+.social-login {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.fb-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    background-color: #3b5998;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.fb-login i {
+    margin-right: 8px;
+}
+
+.fb-login:hover {
+    background-color: #2d4373;
+}
+
+/* Thêm CSS cho các thẻ a bao quanh các nút */
+.button-link,
+.cancel-link {
+    display: inline-block;
+    width: 32%; /* Điều chỉnh để 3 nút vừa với chiều rộng form */
+    text-align: center;
+    text-decoration: none;
+}

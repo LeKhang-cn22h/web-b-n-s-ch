@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Căn giữa nội dung chính */
+}
+
+.book-review {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 1000px; /* Điều chỉnh theo yêu cầu */
+    width: 100%;
+}
+
+.book-details {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: flex-start; /* Đảm bảo các phần tử căn chỉnh tốt */
+}
+
+.book-cover {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.book-info {
+    flex: 1; /* Chiếm toàn bộ không gian còn lại */
+    max-width: 600px;
+}
+
+.book-extra-info {
+float: right;
+    width: 250px; /* Hoặc bất kỳ kích thước phù hợp */
+    margin-left: 20px;
+}
+
+.additional-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.review-form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.reviews .review {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Sách</title>
+    <link rel="stylesheet" href="/footer/footer.css">
+    <link rel="stylesheet" href="/home/styleshome.css">
+    <link rel="stylesheet" href="review.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="/img/logo-removebg-preview.png" type="image/x-icon">
+
+</head>
+<body>
+    <header>
+        <button class="bg"></button>
+        <div class="search-container">
+            <input type="text" placeholder="Tìm kiếm...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+        <button type="button" class="login-button"><a href="/login/login.html">Đăng Nhập</a></button>
+        <button type="button" class="toggle-cart-btn cart-button" id="toggle-cart-btn"><i class="fas fa-cart-shopping"></i></button>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li class="menu__item"><a href="/home/index.html">Trang chủ</a></li>
+            <li class="menu__item"><a href="/gioithieu/moi.html">Giới thiệu</a></li>
+            <li class="menu__item"><a href="/sanpham/sp.html">Sách nổi bật</a></li>
+            <li class="menu__item"><a href="/reviewsach/review.html">Review sách</a></li>
+            <li class="menu__item"><a href="/tintuc/tintuc.html">Tin tức</a></li>
+        </ul>
+    </nav>
+    <!-- Main Content -->
+    <main>
+        <section class="book-review">
+            <div class="container-review">
+                <h2>Đánh Giá Sách</h2>
+
+                <div class="book-details">
+                    <img src="imgreview/anh1.jpg" alt="Bìa Sách" class="book-cover">
+                    <div class="book-info">
+                        <h3>Tên Sách</h3>
+                        <p><strong>Tác Giả:</strong> Michael Ellsberg</p>
+                        <p><strong>Thể Loại:</strong> Sách Tư Duy - Kỹ Năng </p>
+                        <p><strong>Nhà Xuất Bản:</strong> 	Công Thương</p>
+                        <p><strong>Ngày Phát Hành:</strong> 25/09/2023</p>
+                        <p><strong>Đánh Giá Trung Bình:</strong> ★★★★☆</p>
+                    </div>
+                    <div class="book-extra-info">
+                        <h2>Thông Tin Bổ Sung</h2>
+                        <p>Cung cấp cho đọc giả một giáo trình cho một cuộc sống thành công
+                            lời văn gần gũi, dễ đọc, dễ hiểu
+                            giúp bạn tìm ra một con đường mới để đi tới thành công</p>
+                        <img src="imgreview/anh2.png" alt="Additional Image" class="additional-image">
+                    </div>
+                </div>
+                
+
+                <div class="review-form">
+                    <h3>Viết Đánh Giá Của Bạn</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="review-title">Tiêu Đề Đánh Giá</label>
+                            <input type="text" id="review-title" placeholder="Nhập tiêu đề đánh giá">
+                        </div>
+                        <div class="form-group">
+                            <label for="review-body">Nội Dung Đánh Giá</label>
+                            <textarea id="review-body" rows="5" placeholder="Nhập nội dung đánh giá"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="rating">Đánh Giá:</label>
+                            <select id="rating">
+                                <option value="5">★★★★★</option>
+                                <option value="4">★★★★☆</option>
+                                <option value="3">★★★☆☆</option>
+                                <option value="2">★★☆☆☆</option>
+                                <option value="1">★☆☆☆☆</option>
+                            </select>
+                        </div>
+                        <button type="submit">Gửi Đánh Giá</button>
+                    </form>
+                </div>
+
+                <div class="reviews">
+                    <h3>Đánh Giá Của Người Dùng</h3>
+                    <div class="review">
+                        <h4>Người Dùng 1</h4>
+                        <p><strong>Tiêu Đề:</strong> Đánh giá tuyệt vời!</p>
+                        <p><strong>Nội Dung:</strong> Sách rất hay, nội dung thú vị và hấp dẫn. Tôi sẽ giới thiệu cho bạn bè.</p>
+                        <p><strong>Đánh Giá:</strong> ★★★★★</p>
+                    </div>
+                    <div class="review">
+                        <h4>Người Dùng 2</h4>
+                        <p><strong>Tiêu Đề:</strong> Không như mong đợi</p>
+                        <p><strong>Nội Dung:</strong> Nội dung sách không được như mong đợi. Có một số phần hơi nhàm chán.</p>
+                        <p><strong>Đánh Giá:</strong> ★★☆☆☆</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="containerfooter">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Payment Options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Online Shop</h4>
+                    <ul>
+                        <li><a href="#">Sách Thiếu Nhi</a></li>
+                        <li><a href="#">Sách Kỹ Năng Sống</a></li>
+                        <li><a href="#">Sách Khoa Học</a></li>
+                        <li><a href="#">Sách Gia Đình</a></li>
+                        <li><a href="#">Sách Giáo Khoa</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

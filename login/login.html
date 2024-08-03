@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="icon" href="/img/logo-removebg-preview.png" type="image/x-icon">
+    <!-- Để sử dụng Font Awesome Icons -->
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="container">
+      <form id="loginForm" class="login">
+        <h1>ĐĂNG NHẬP</h1>
+        <label for="username">Tên người dùng:</label> <br />
+        <input type="text" name="username" id="username" tabindex="1" /> <br />
+        <label for="pw">Mật khẩu:</label> <br />
+        <input type="password" name="pw" id="pw" tabindex="2" /> <br />
+        <a href="#" class="forgot-password">Quên mật khẩu?</a> <br />
+        <!-- Thêm liên kết quên mật khẩu -->
+        <div class="buttons">
+          <input type="submit" name="submit" id="submitBtn" tabindex="3" value="Đăng nhập" />
+          <a href="register.html" class="button-link">
+            <input type="button" tabindex="4" value="Đăng ký" />
+          </a>
+          <a href="/home/index.html" class="button-link cancel-link">
+            <input class="cancel" type="button" tabindex="5" value="Hủy" />
+          </a>
+        </div>
+        <div class="social-login">
+          <button class="fb-login">
+            <i class="fab fa-facebook-f"></i> Đăng nhập bằng Facebook
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      // JavaScript kiểm tra tính hợp lệ
+      document.getElementById('loginForm').addEventListener('submit', function(event) {
+        // Ngăn chặn hành vi mặc định của form
+        event.preventDefault();
+        
+        // Lấy giá trị từ các trường
+        const username = document.getElementById('username').value.trim();
+        const password = document.getElementById('pw').value.trim();
+
+        // Kiểm tra tính hợp lệ
+        if (username === '') {
+          alert('Tên người dùng không được để trống.');
+          return;
+        }
+
+        if (password === '') {
+          alert('Mật khẩu không được để trống.');
+          return;
+        }
+
+        // Thực hiện kiểm tra thêm nếu cần (ví dụ: độ dài mật khẩu, ký tự đặc biệt, v.v.)
+        if (password.length < 6) {
+          alert('Mật khẩu phải có ít nhất 6 ký tự.');
+          return;
+        }
+
+        // Nếu tất cả các điều kiện đều đúng, có thể tiếp tục gửi form
+        alert('Đăng nhập thành công!');
+        document.getElementById('loginForm').submit(); // Gửi form
+      });
+    </script>
+  </body>
+</html>

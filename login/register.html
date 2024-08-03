@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Để sử dụng Font Awesome Icons -->
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <form id="registerForm" class="login">
+            <h1>ĐĂNG KÝ</h1>
+            <label for="username">Tên người dùng:</label> <br>
+            <input type="text" name="username" id="username" tabindex="1"> <br>
+            <label for="pw">Mật khẩu:</label> <br>
+            <input type="password" name="pw" id="pw" tabindex="2"> <br>
+            <label for="confirmPw">Xác nhận mật khẩu:</label> <br>
+            <input type="password" name="confirmPw" id="confirmPw" tabindex="3"> <br>
+            <div class="buttons">
+                <input type="submit" name="submit" id="submitBtn" tabindex="4" value="Đăng ký"> 
+                <a href="login.html" class="button-link"><input type="button" tabindex="5" value="Đăng nhập"></a> 
+                <a href="/home/index.html" class="button-link cancel-link"><input class="cancel" type="button" tabindex="6" value="Hủy"></a> 
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // JavaScript kiểm tra tính hợp lệ
+        document.getElementById('registerForm').addEventListener('submit', function(event) {
+            // Ngăn chặn hành vi mặc định của form
+            event.preventDefault();
+            
+            // Lấy giá trị từ các trường
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('pw').value.trim();
+            const confirmPassword = document.getElementById('confirmPw').value.trim();
+
+            // Kiểm tra tính hợp lệ
+            if (username === '') {
+                alert('Tên người dùng không được để trống.');
+                return;
+            }
+
+            if (password === '') {
+                alert('Mật khẩu không được để trống.');
+                return;
+            }
+
+            if (confirmPassword === '') {
+                alert('Xác nhận mật khẩu không được để trống.');
+                return;
+            }
+
+            if (password !== confirmPassword) {
+                alert('Mật khẩu và xác nhận mật khẩu không khớp.');
+                return;
+            }
+
+            if (password.length < 6) {
+                alert('Mật khẩu phải có ít nhất 6 ký tự.');
+                return;
+            }
+
+            // Nếu tất cả các điều kiện đều đúng, có thể tiếp tục gửi form
+            alert('Đăng ký thành công!');
+            document.getElementById('registerForm').submit(); // Gửi form
+        });
+    </script>
+</body>
+</html>
