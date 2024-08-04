@@ -50,6 +50,10 @@ form.login {
 
 /* Căn chỉnh các input và button */
 form.login input[type="text"],
+<<<<<<< HEAD
+=======
+form.login input[type="email"],
+>>>>>>> a53a803f8c6f233142abecac6c23f51eab716e97
 form.login input[type="password"],
 form.login input[type="submit"],
 form.login input[type="button"] {
@@ -61,6 +65,10 @@ form.login input[type="button"] {
 }
 
 form.login input[type="text"]:focus,
+<<<<<<< HEAD
+=======
+form.login input[type="email"]:focus,
+>>>>>>> a53a803f8c6f233142abecac6c23f51eab716e97
 form.login input[type="password"]:focus {
     border: 2px solid blue; /* Màu viền khi ô input được chọn */
     outline: none; /* Loại bỏ đường viền mặc định của trình duyệt */
