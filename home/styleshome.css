@@ -6,6 +6,7 @@ body {
 }
 
 header {
+
   height: 20vh;
   display: flex;
   align-items: center;
@@ -86,7 +87,11 @@ footer {
   color: black;
 }
 
-.cart-button {
+#toggle-cart-btn {
+z-index: 1000;
+top:9%;
+right: 1%;
+position: fixed;
   flex-grow: 0.1;
   background: none;
   border: none;

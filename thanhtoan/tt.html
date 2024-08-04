@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt Hàng - Thông Tin Giao Hàng</title>
+    <link rel="icon" href="/img/logo-removebg-preview.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="tt.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome Icons -->
+</head>
+<body>
+    
+    <main>
+        <h2>Thông Tin Đặt Hàng</h2>
+        <div class="order-details">
+            <img id="order-img" src="" alt="Sản phẩm">
+            <p id="order-name"></p>
+            <p id="order-price"></p>
+        </div>
+        <form id="order-form">
+            <div class="form-group">
+                <label for="receiver-name">Tên người nhận:</label>
+                <input type="text" id="receiver-name" name="receiver-name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone-number">Số điện thoại:</label>
+                <input type="tel" id="phone-number" name="phone-number" required>
+            </div>
+            <div class="form-group">
+                <label for="city">Tỉnh/Thành phố:</label>
+                <select id="city" name="city">
+                    <option value="" disabled selected>Chọn tỉnh/thành phố</option>
+                    <option value="Hà Nội">Hà Nội</option>
+                    <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                    <option value="Đà Nẵng">Đà Nẵng</option>
+                    <!-- Thêm các tỉnh/thành phố khác nếu cần -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="district">Quận/Huyện:</label>
+                <select id="district" name="district" disabled>
+                    <option value="" disabled selected>Chọn quận/huyện</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ward">Xã/Phường:</label>
+                <select id="ward" name="ward" disabled>
+                    <option value="" disabled selected>Chọn xã/phường</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="additional-address">Địa chỉ cụ thể:</label>
+                <textarea id="additional-address" name="additional-address" rows="4" placeholder="Nhập địa chỉ cụ thể..." required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="payment-method">Loại hình thanh toán:</label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="cod">Thanh toán khi nhận hàng</option>
+                    <option value="online">Thanh toán online</option>
+                </select>
+            </div>
+            <button type="submit" >Đặt hàng</button>
+        </form>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            document.getElementById('order-img').src = urlParams.get('img');
+            document.getElementById('order-name').innerText = urlParams.get('name');
+            document.getElementById('order-price').innerText = `Giá: ${urlParams.get('price')}đ`;
+        });
+    </script>
+    <script src="tt.js"></script>
+</body>
+</html>

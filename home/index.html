@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="/reviewhome/stylesreview.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="/footer/footer.css">
+    <link rel="stylesheet" href="/sanpham/sp.css">
     <link rel="stylesheet" type="text/css"
+   
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
@@ -22,15 +24,15 @@
             <button type="submit"><i class="fas fa-search"></i></button>
         </div>
         <button type="button" class="login-button"><a href="/login/login.html">Đăng Nhập</a></button>
-        <button type="button" class="cart-button"><i class="fas fa-shopping-cart"></i></button>
+        <button type="button" class="toggle-cart-btn cart-button" id="toggle-cart-btn"><i class="fas fa-cart-shopping"></i></button>
     </header>
     <nav>
         <ul class="menu">
             <li class="menu__item"><a href="#">Trang chủ</a></li>
             <li class="menu__item"><a href="/gioithieu/moi.html">Giới thiệu</a></li>
             <li class="menu__item"><a href="/sanpham/sp.html">Sách nổi bật</a></li>
-            <li class="menu__item"><a href="#">Review sách</a></li>
-            <li class="menu__item"><a href="#">Tin tức</a></li>
+            <li class="menu__item"><a href="/reviewsach/review.html">Review sách</a></li>
+            <li class="menu__item"><a href="/tintuc/tintuc.html">Tin tức</a></li>
         </ul>
     </nav>
     <div class="container">
@@ -41,11 +43,11 @@
 
             <li class="category__item"><a href="#">Sách Thiếu Nhi</a>
                 <ul>
-                    <li class="category__item"><a href="#">Văn học thiếu nhi</a></li>
-                    <li class="category__item"><a href="#">Kiến thức - Kỹ năng cho trẻ em</a></li>
-                    <li class="category__item"><a href="#">Tranh Truyện</a></li>
+                    <li class="category__item"><a href="/vhtn/vhtn.html">Văn học thiếu nhi</a></li>
+                    <li class="category__item"><a href="/ktknct/ktknct.html">Kiến thức - Kỹ năng cho trẻ em</a></li>
+                    <li class="category__item"><a href="/truyen/truyen.html">Tranh Truyện</a></li>
                     <li class="category__item"><a href="#">Vui vào lớp 1</a></li>
-                    <li class="category__item"><a href="#">Truyện Tranh</a></li>
+                    <li class="category__item"><a href="/tranh/sp.html">Truyện Tranh</a></li>
                     <li class="category__item"><a href="#">Khám phá thế giới</a></li>
                     <li class="category__item"><a href="#">Sách nói</a></li>
                 </ul>
@@ -269,7 +271,7 @@
                         <a href="#" class="product__info-name">Bộ Sách "Who Is - Là Ai" - Mang Các Con Khám Phá Bảo Tàng Chân Dung Những Vĩ Nhân Đã Làm Thay Đổi Thế Giới (Combo 19 Cuốn)
                         </a>
                         <div class="product__info-price">
-                            <span><del class="product__info-price--root">931,000 <sup>đ</sup></del> 744,800<sup>đ</sup> </span>
+                            <p><del class="product__info-price--root">79,000 <sup>đ</sup></del><span> 63,200</span><sup>đ</sup> </p>
                             <div class="tag-icon"> - 20% </div>
                         </div>
                     </div>
@@ -286,7 +288,7 @@
                     <div class="product__info">
                         <a href="#" class="product__info-name">Combo Vô Cùng Tàn Nhẫn Vô Cùng Yêu Thương - BẢN ĐẶC BIỆT (Bộ 4 Tập)</a>
                         <div class="product__info-price">
-                            <span><del class="product__info-price--root">699,000 <sup>đ</sup></del> 559,200<sup>đ</sup> </span>
+                            <p><del class="product__info-price--root">79,000 <sup>đ</sup></del><span> 63,200</span><sup>đ</sup> </p>
                             <div class="tag-icon"> - 20% </div>
                         </div>
                     </div>
@@ -295,7 +297,7 @@
              <li class="wrapper-slide">
                 <div class="product__item">
                     <div class="product__item-top">
-                        <a href="#" class="product__item-top--thumb">
+                        <a href="/product/product.html" class="product__item-top--thumb">
                             <img src="/imgbookgd/anh3.jpg" alt="Book 3">
                         </a>
                         <button class="buy">Mua ngay</button>
@@ -303,7 +305,7 @@
                     <div class="product__info">
                         <a href="#" class="product__info-name">Tri Thức Về Vạn Vật - Một Thế Giới Trực Quan Chưa Từng Thấy</a>
                         <div class="product__info-price">
-                            <span><del class="product__info-price--root"> 699,000 <sup>đ</sup></del> 559,200<sup>đ</sup> </span>
+                            <p><del class="product__info-price--root">79,000 <sup>đ</sup></del><span> 63,200</span><sup>đ</sup> </p>
                             <div class="tag-icon"> - 20% </div>
                         </div>
                     </div>
@@ -321,7 +323,7 @@
                         <a href="#" class="product__info-name">Tiểu Học Vui - Vững Bước Lớp 5 - 101 Câu Đố Rèn Trí Não Luyện Kỹ Năng
                         </a>
                         <div class="product__info-price">
-                            <span><del class="product__info-price--root">79,000 <sup>đ</sup></del> 63,200<sup>đ</sup> </span>
+                            <p><del class="product__info-price--root">79,000 <sup>đ</sup></del><span> 63,200</span><sup>đ</sup> </p>
                             <div class="tag-icon"> - 20% </div>
                         </div>
                     </div>
@@ -338,7 +340,7 @@
                     <div class="product__info">
                         <a href="#" class="product__info-name">Tiểu Học Vui - Tăng Tốc Lớp 4 - 101 Câu Đố Rèn Trí Não Luyện Kỹ Năng</a>
                         <div class="product__info-price">
-                            <span><del class="product__info-price--root"> 79,500 <sup>đ</sup></del>63,600<sup>đ</sup> </span>
+                            <p><del class="product__info-price--root">79,000 <sup>đ</sup></del><span> 63,200</span><sup>đ</sup> </p>
                             <div class="tag-icon"> - 20% </div>
                         </div>
                     </div>
@@ -372,7 +374,7 @@
                     <div class="product__info">
                         <a href="#" class="product__info-name">Tư Duy Logic - Trò Chơi Tư Duy Cho Trẻ (Dành Cho Bé Từ 5 Tuổi)</a>
                         <div class="product__info-price">
-                            <span><del class="product__info-price--root">49,000<sup>đ</sup></del> 39,200<sup>đ</sup> </span>
+                            <p><del class="product__info-price--root">79,000 <sup>đ</sup></del><span> 63,200</span><sup>đ</sup> </p>
                             <div class="tag-icon"> - 20% </div>
                         </div>
                     </div>
@@ -389,7 +391,7 @@
                     <div class="product__info">
                         <a href="#" class="product__info-name">Rèn Luyện Sự Tập Trung - Trò Chơi Tư Duy Cho Trẻ (Dành Cho Bé Từ 5 Tuổi)</a>
                         <div class="product__info-price">
-                            <span><del class="product__info-price--root">49,000 <sup>đ</sup></del> 39,200<sup>đ</sup> </span>
+                            <p><del class="product__info-price--root">49,000 <sup>đ</sup></del> <span>39,800</span><sup>đ</sup> </p>
                             <div class="tag-icon"> - 20% </div>
                         </div>
                     </div>
@@ -478,6 +480,23 @@
             </div>
          </div>
     </main>
+    <section id="cart-menu">
+        <h2>Giỏ hàng của bạn</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sản phẩm</th>
+                    <th>Giá</th>
+                    <th>Số lượng</th>
+                    <th>Xóa</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <div class="cart-total">
+            <span>Tổng tiền:</span> <span class="tongtien">0 đ</span>
+        </div>
+    </section>
     <footer class="footer">
         <div class="containerfooter">
             <div class="row">
@@ -522,6 +541,82 @@
             </div>
         </div>
     </footer>
+    <script>// Lưu trữ tham chiếu đến giỏ hàng và nút điều khiển
+        const cartMenu = document.getElementById('cart-menu');
+        const toggleCartButton = document.getElementById('toggle-cart-btn');
+        
+        // Ẩn giỏ hàng khi mới vào trang
+        cartMenu.style.display = 'none';
+        
+        // Xử lý sự kiện nhấn nút "Mua ngay"
+        const btns = document.querySelectorAll('button.buy');
+        btns.forEach(function(button) {
+            button.addEventListener('click', function(event) {
+                const phantubtn = event.target;
+                const product = phantubtn.closest('.wrapper-slide');
+                const productImg = product.querySelector('img').src; // Lấy link ảnh
+                const productName = product.querySelector('.product__info-name').innerText; // Lấy tên sản phẩm
+                const productPriceText = product.querySelector('.product__info-price span').innerText; // Lấy giá sản phẩm
+                const productPrice = parseFloat(productPriceText.replace(/[^0-9]/g, '')); // Chuyển đổi giá từ chuỗi sang số
+                
+                addProductToCart(productPrice, productImg, productName);
+        
+                // Hiển thị giỏ hàng khi thêm sản phẩm
+                cartMenu.style.display = 'block';
+                cartMenu.classList.add('active');
+            });
+        });
+        
+        // Thêm sản phẩm vào giỏ hàng
+        function addProductToCart(productPrice, productImg, productName) {
+            const addtr = document.createElement('tr');
+            const trcontent = `
+                <td class="nameproduct">
+                    <img src="${productImg}" alt=""> ${productName}
+                </td>
+                <td><p>${productPrice.toLocaleString()}<sup>đ</sup></p></td>
+                <td><input class="sl" type="number" value="1" min="1" step="1"></td>
+                <td class="dele">xóa</td>
+            `;
+            addtr.innerHTML = trcontent;
+            const cartTable = document.querySelector('#cart-menu table tbody');
+            cartTable.append(addtr);
+            updateCartTotal();
+            
+            // Thêm sự kiện lắng nghe cho thay đổi số lượng
+            addtr.querySelector('input').addEventListener('input', function() {
+                updateCartTotal();
+            });
+        
+            // Thêm sự kiện xóa sản phẩm
+            addtr.querySelector('.dele').addEventListener('click', function() {
+                addtr.remove();
+                updateCartTotal();
+            });
+        }
+        
+        // Cập nhật tổng tiền trong giỏ hàng
+        function updateCartTotal() {
+            const cartItems = document.querySelectorAll('#cart-menu tbody tr');
+            let total = 0;
+            cartItems.forEach(function(item) {
+                const quantity = parseInt(item.querySelector('input').value, 10);
+                const priceText = item.querySelector('p').innerText;
+                const price = parseFloat(priceText.replace(/[^0-9]/g, ''));
+                total += quantity * price;
+            });
+            const totalElement = document.querySelector('#cart-menu .tongtien');
+            if (totalElement) {
+                totalElement.innerText = `${total.toLocaleString()} đ`; // Hiển thị tổng tiền với định dạng số
+            }
+        }
+        
+        // Xử lý sự kiện nhấn nút điều khiển hiển thị/ẩn giỏ hàng
+        toggleCartButton.addEventListener('click', function() {
+            cartMenu.classList.toggle('active');
+            cartMenu.style.display = cartMenu.classList.contains('active') ? 'block' : 'none';
+        });
+        </script>
 <script src="slide.js" defer></script>
 </body>
 </html>

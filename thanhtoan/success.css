@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+.order-summary {
+    text-align: center;
+}
+
+.order-summary img {
+    width: 20vh;
+    height: 20vh;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.order-summary p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.order-summary strong {
+    font-weight: bold;
+}

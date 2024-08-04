@@ -20,10 +20,10 @@
 liArray[0].innerHTML = `
     <div class="product__item">
         <div class="product__item-top">
-            <a href="#" class="product__item-top--thumb">
+            <a href="/product/product.html" class="product__item-top--thumb">
                 <img src="/imgbook/sach1.png" alt="Book 1">
             </a>
-            <a href="#" class="buy">Mua ngay</a>
+            <a href="/product/product.html" class="buy">Mua ngay</a>
         </div>
         <div class="product__info">
             <a href="#" class="product__info-name">Dầu Và Máu - Mohammed Bin Salman Và Tham Vọng Tái Thiết Kinh Tế Ả-Rập</a>
